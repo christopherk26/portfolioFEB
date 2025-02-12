@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react({
@@ -11,11 +11,21 @@ export default defineConfig({
       }
     })
   ],
-  base: './',  // Add this line for relative paths
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
     emptyOutDir: true,
-  }
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
+    },
+  },
+  base: '/' // This ensures assets are looked for at the root
 })
