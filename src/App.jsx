@@ -6,7 +6,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Coursework from './pages/Coursework';
-import Photography from './pages/photography';
+import Photography from './pages/Photography';
 import Projects from './pages/Projects';
 import { useTheme } from './context/ThemeContext';
 
