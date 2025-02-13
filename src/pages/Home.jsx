@@ -90,6 +90,7 @@ const InterestTitle = styled.h4`
   margin-bottom: ${props => props.theme.spacing.small};
 `;
 
+
 const SiteSection = styled(Link)`
   display: block;
   padding: ${props => props.theme.spacing.medium};
@@ -114,9 +115,8 @@ const Home = () => {
           <Title>Christopher Kurdoghlian</Title>
           <Subtitle>Computer Science Student & Developer</Subtitle>
           <Text>
-            Welcome! I'm a Computer Science major with a minor in Data Science at California 
-            Polytechnic State University Pomona. I'm passionate about technology, problem-solving, 
-            and creating meaningful solutions through code.
+            Welcome! I'm a Computer Science major with a minor in Data Science at California
+            Polytechnic State University Pomona.
           </Text>
         </HeroContent>
         <ImageContainer>
@@ -127,38 +127,12 @@ const Home = () => {
       <Section>
         <SectionTitle>About Me</SectionTitle>
         <Text>
-          Beyond my academic pursuits, I'm driven by curiosity and a love for continuous learning. 
-          I believe in the power of teamwork and collaboration, which has been reinforced through 
-          my various project experiences and academic endeavors.
+          Beyond my academic pursuits, I enjoy reading, running, LEGO, and photography.
         </Text>
-        
-        <InterestsList>
-          <InterestCard>
-            <InterestTitle>Reading</InterestTitle>
-            <Text>
-              I'm an avid reader, always exploring new ideas and perspectives through books.
-            </Text>
-          </InterestCard>
-          <InterestCard>
-            <InterestTitle>LEGO</InterestTitle>
-            <Text>
-              Building with LEGO helps me think creatively and solve problems systematically.
-            </Text>
-          </InterestCard>
-          <InterestCard>
-            <InterestTitle>Running</InterestTitle>
-            <Text>
-              Running keeps me focused and disciplined, teaching valuable lessons about persistence.
-            </Text>
-          </InterestCard>
-          <InterestCard>
-            <InterestTitle>Teamwork</InterestTitle>
-            <Text>
-              I value collaborative environments and believe great achievements come from working together.
-            </Text>
-          </InterestCard>
-        </InterestsList>
+
+  
       </Section>
+
 
       <Section>
         <SectionTitle>Explore My Website</SectionTitle>
@@ -173,6 +147,10 @@ const Home = () => {
         <SiteSection to="/photography">
           <InterestTitle>Photography</InterestTitle>
           <Text>Browse through my collection of photographs capturing various moments and scenes.</Text>
+        </SiteSection>
+        <SiteSection to="/tech-stack">
+          <InterestTitle>Tech Stack</InterestTitle>
+          <Text>Discover the programming languages, frameworks, and tools I use to build solutions.</Text>
         </SiteSection>
         <SiteSection to="/contact">
           <InterestTitle>Contact</InterestTitle>

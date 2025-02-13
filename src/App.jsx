@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Coursework from './pages/Coursework';
 import Photography from './pages/Photography';
 import Projects from './pages/Projects';
+import TechStack from './pages/TechStack';
 import { useTheme } from './context/ThemeContext';
 
 const ThemedApp = () => {
@@ -24,6 +25,7 @@ const ThemedApp = () => {
           <Route path="/coursework" element={<Coursework />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/tech-stack" element={<TechStack />} />
         </Routes>
       </Router>
     </EmotionThemeProvider>
